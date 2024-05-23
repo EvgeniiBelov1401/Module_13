@@ -7,10 +7,16 @@
             var stack = new Stack<string>();
             stack.Push("First");
             stack.Push("Second");
+            stack.Push("Third");
 
             //var element= stack.Pop();
-            var element=stack.Peek();
-            Console.WriteLine(element);
+            //var element=stack.Peek();
+            //Console.WriteLine(element);
+
+            foreach (var item in stack)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
